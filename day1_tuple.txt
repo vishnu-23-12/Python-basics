@@ -1,0 +1,8 @@
+#tuple sample
+inf=('vishnu',20.1232,'ECE')
+print(inf[0])
+print(inf[-1])
+print(inf *2)
+print(len(inf +("12",23)))
+print(round(inf[1]))
+print(len(inf))
