@@ -1,0 +1,13 @@
+list1=[1,2,3,4,5]
+user=input("a to add & r to remove:")
+s=int(input("no of elements to add/remove:"))
+if user==('a' or 'A'):
+    for i in range(s):
+        list1.append(int(input()))
+    print(list1)
+elif user==('r' or 'R'):
+    for j in range(s):
+        list1.remove(int(input()))
+    print(list1)
+else:
+    print("invalid")
