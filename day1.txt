@@ -1,0 +1,11 @@
+#dictionary operations
+person={'Name':'Vishnu','age':20,'city':'vijayawada'}
+print(person)
+person['age']=19
+person['email']='vishnu@gmail.com'
+print(person)
+del person['city']
+print(person)
+print("keys:",person.keys())
+print("values:",person.values())
+print(person.get('Name'))
