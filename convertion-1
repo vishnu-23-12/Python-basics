@@ -1,0 +1,8 @@
+bnum=int(input())
+dnum=i=0
+while bnum!=0:
+    r=bnum%10
+    dnum=dnum+r*(2**i)
+    bnum//=10
+    i+=1
+print(dnum,"decimal value")
