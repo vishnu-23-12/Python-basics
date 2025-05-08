@@ -1,0 +1,9 @@
+char=input("Enter a string:")
+#if string.islower():
+ #   print(string.upper())
+#if string.isupper():
+ #   print(string.lower())
+if char>='A' and char<='Z':
+    print(char.lower())
+if char>'a' and char<='z':
+    print(char.upper())
