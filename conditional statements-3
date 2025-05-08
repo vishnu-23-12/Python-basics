@@ -1,0 +1,10 @@
+#code for checking the interval of a given number (nested if-elif-else)
+num=int(input("Enter a number:"))
+if num>=0 and num<=10:
+    print(num,"is in 0-10 range")
+elif num>=11 and num<=20:
+    print(num,"is in 11-20 range")
+elif num>=21 and num<=30:
+    print(num,"is in 21-30 range")
+else:
+    print("out of range")
