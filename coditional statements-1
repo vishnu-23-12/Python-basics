@@ -1,0 +1,9 @@
+a=input()
+if a.isdigit():
+    print(a,"is a number")
+elif a.isalpha():
+    print(a,"is a character")
+elif a.isspace():
+    print(a,"is a space") 
+else:
+    print(a,"is a special character")
