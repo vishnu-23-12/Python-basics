@@ -1,0 +1,7 @@
+num=int(input())
+if num>0:
+    print(num,"is postive number")
+elif num<0:
+    print(num,"is negative number")
+else:
+    print(num,"is zero")
