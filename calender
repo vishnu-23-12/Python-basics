@@ -1,0 +1,9 @@
+mday=31
+sday=int(input("Enter starting day:"))
+print("Sun  Mon  Tue  Wed  Thu  Fri  Sat")
+for _ in range(sday):
+    print("  ",end="  ")
+for days in range(1,mday+1):
+    print(f"{days: >3}",end='  ')
+    if (sday+days) %7==0:
+        print()
