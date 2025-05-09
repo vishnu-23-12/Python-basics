@@ -1,0 +1,20 @@
+#separating uppercase,lowercase and numbers
+char=input()
+u=l=n=0
+if char>='0' and char<='9':
+    n+=1
+elif char>='A' and char<='Z':
+    u+=1
+elif char>='a' and char<='z':
+    l+=1
+while char!='*':
+    char=input()
+    if char>='0' and char<='9':
+        n+=1
+    elif char>='A' and char<='Z':
+        u+=1
+    elif char>='a' and char<='z':
+        l+=1
+print("Uppercase char:",u)
+print("lowercase char:",l)
+print("number char:",n)
