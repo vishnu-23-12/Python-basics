@@ -1,0 +1,53 @@
+def add(student1,student2):
+    total=student1+student2
+    return total
+student1=int(input("Enter the money"))
+student2=int(input("enter the money"))
+print(add(student1,student2))
+
+def info(name="unknown",age=0):
+    print("Name:",name)
+    print("age:",age)
+info("Vishnu",20)
+info(age=23)
+info("Vishnu")
+info()
+
+def cal(a,b):
+    return a+b,a-b,a*b,a/b
+a=int(input())
+b=int(input())
+sum,sub,mul,div=cal(a,b)
+print("Sum:",sum)
+print("subtract:",sub)
+print("product:",mul)
+print("div:",div)
+
+def maxmin(a,b,c):
+    if a<b and a<c:min=a
+    elif b<a and b<c:min=b
+    else:min=c
+    if a>b and a>c:max=a
+    elif b>a and b>c:max=b
+    else:max=c
+    return min,max
+a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+c=int(input("Enter a number:"))
+min,max=maxmin(a,b,c)
+print("minimum value:",min)
+print("Maximum value:",max)
+
+def fun(lst):
+    even,odd=0,0
+    for i in lst:
+        if i%2==0:
+            even+=1
+        else:
+            odd+=1
+    return even,odd
+num=input()
+lst=list(map(int,num.split(",")))
+even,odd=fun(lst)
+print("Even:",even)
+print("Odd:",odd)
