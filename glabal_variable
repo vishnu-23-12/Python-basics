@@ -1,0 +1,11 @@
+total=0
+def add_subject_marks():
+    global total
+    marks=int(input("Enter marks of a subject:"))
+    total+=marks
+    return marks
+print("subject-1 marks:",add_subject_marks())
+print("subjeect-2 marks:",add_subject_marks())
+print("subject-3 marks:",add_subject_marks())
+print("Total marks stored in global:",total)
+print("average marks of a student:",total/3)
