@@ -24,3 +24,35 @@ for i in range(1,no_of_subjects+1):
     add_subject_marks()
 print("Total marks stored in global:",total)
 print("average marks of a student:",total/no_of_subjects)
+
+total=0
+subject_marks=[]
+def add_subject_marks():
+    global total
+    subject_marks.append(marks)
+    total+=marks
+    return marks
+no_of_subjects=int(input("Enter no of subjects:"))
+for i in range(1,no_of_subjects+1):
+    marks=int(input("Enter marks of a subject:"))
+    print("subject-",i," marks:",marks)
+    add_subject_marks()
+print("Total marks in all subjects:",subject_marks)
+print("Total marks stored in global:",total)
+print("average marks of a student:",total/no_of_subjects)
+
+
+subject_marks=[]
+def add_subject_marks():
+    mark=int(input("Enter marks of a subject:"))
+    subject_marks.append(mark)
+    return mark
+print("subject-1 marks:",add_subject_marks())
+print("subjeect-2 marks:",add_subject_marks())
+print("subject-3 marks:",add_subject_marks())
+print("all subject marks:",subject_marks)
+total=sum(subject_marks)
+l=len(subject_marks)
+avg=total/l
+print("Total marks:",total)
+print("average:",avg)
