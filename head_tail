@@ -1,0 +1,29 @@
+def head(num):
+    if num==0:
+        return
+    head(num-1)
+    print(num)
+num=int(input())
+head(num)
+
+def tail(num):
+    if num==0:
+        return
+    print(num)
+    tail(num-1)
+num=int(input())
+tail(num)
+
+def sumhead(num,temp=0):
+    if num==0:
+        return 0
+    return num+sumhead(num-1)
+num=int(input())
+sumhead(num)
+
+def sumtail(num,temp=0):
+    if num==0:
+        return temp
+    return sumtail(num-1,temp+num)
+num=int(input())
+sumtail(num)
