@@ -1,0 +1,60 @@
+```python
+
+```
+
+#fibonacci series using recursion
+def fib(n):
+    if n<=1:
+        return n
+    else:
+        return fib(n-1)+fib(n-2)
+terms=int(input())
+for i in range(terms):  #0,1,2,3,4
+    print(fib(i),end=' ')
+
+fib(0)=0
+fib(1)=1
+fib(2)->fib(2-1)+fib(2-2)
+        fib(1)+fib(0)
+        1+0=1
+fib(3)->fib(3-1)+fib(3-2)
+        fib(2)+fib(1)
+        fib(2-1)+fib(2-2)+fib(1-0)+fib(1-2)
+        fib(1)+fib(0)+fib(1)+fib(0)
+        1+0+1+0=2
+        1+1=2
+fib(4)->fib(4-1)+fib(4-2)
+        fib(3)+fib(2)
+        2+1=3
+fib(5)->fib(5-1)+fib(5-2)
+        fib(4)+fib(3)
+        3+2=5
+fib(6)->fib(6-1)+fib(6-2)
+        fib(5)+fib(4)
+        5+3=8
+
+def permute(s,bucket=''):
+    if not s:
+        print(bucket)
+        #return
+    for i in range(len(s)):
+        ns=s[:i]+s[i+1:]
+        permute(ns,bucket+s[i])
+text=input()
+print('possibilities of combinations')
+permute(text)
+
+b=''
+ns=s[:0]+s[0+1:]
+permute(bc,bucket+a)
+b='a
+ns=s[:1]+s[1+1:]
+permute(c,bucket+ab)
+b='ab'
+ns=s[:2]+s[2+1:]
+permute('',bucket+abc)
+b='abc'
+
+b=''
+ns=s[:1]+s[2+1:]
+permute(c,bucket+s[i])
