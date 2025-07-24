@@ -39,9 +39,29 @@ def permute(s,bucket=''):
     for i in range(len(s)):
         ns=s[:i]+s[i+1:]
         permute(ns,bucket+s[i])
-
 text=input()
 print('possibilities of combinations')
 permute(text)
 
-
+permute("abc", "")
+|
+|-- permute("bc", "a")
+|   |-- permute("c", "ab")
+|   |   |-- permute("", "abc") → prints "abc"
+|   |
+|   |-- permute("b", "ac")
+|       |-- permute("", "acb") → prints "acb"
+|
+|-- permute("ac", "b")
+|   |-- permute("c", "ba")
+|   |   |-- permute("", "bac") → prints "bac"
+|   |
+|   |-- permute("a", "bc")
+|       |-- permute("", "bca") → prints "bca"
+|
+|-- permute("ab", "c")
+    |-- permute("b", "ca")
+    |   |-- permute("", "cab") → prints "cab"
+    |
+    |-- permute("a", "cb")
+        |-- permute("", "cba") → prints "cba"
