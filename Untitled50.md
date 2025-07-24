@@ -1,7 +1,3 @@
-```python
-
-```
-
 #fibonacci series using recursion
 def fib(n):
     if n<=1:
