@@ -1,0 +1,30 @@
+#r+ operation
+
+filename='file1.txt'
+with open(filename,'w') as f:
+    f.write("Hello\n")
+with open(filename,'r+')as file:
+    print("latest data:")
+    print(file.read())
+    file.seek(0)
+    user_input=input("\n Enter text to overwrite from beginning..")
+    file.write(user_input)
+    file.seek(0)
+    print("\n file after writing by r+")
+    print(file.read())
+
+#w+ operation
+with open('file2.txt', 'w+') as file:
+    text= input("Enter any data....")
+    file.write(text)
+    file.seek(0)
+    print("\n latest file content ")
+    print(file.read())
+
+#a+ operation
+with open('line.txt','a+') as file:
+    text=input("Enter a line to append data\n")
+    file.write(text+'\n')
+    file.seek(0)
+    print("current content in the file ")
+    print(file.read())
