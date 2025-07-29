@@ -28,3 +28,14 @@ with open('line.txt','a+') as file:
     file.seek(0)
     print("current content in the file ")
     print(file.read())
+
+
+filename=input("Enter the file name with extension:")
+with open(filename,'r') as f:
+    text=f.read()
+    count=0
+    letter=input("Enter text to search:")
+    for i in text:
+        if i==letter :
+            count+=1
+print(letter,"appers",count,"times in the file")
